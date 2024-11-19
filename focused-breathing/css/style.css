@@ -1,0 +1,58 @@
+:root {
+    --primary-color: lightsteelblue;
+    --secondary-color: lightpink;
+    --large: 200px;
+    --small: 10px;
+    --timing: 8s;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+}
+
+main, section {
+    height: 300px;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: auto;
+}
+
+div{
+    background-color: var(--primary-color);
+    width: var(--small);
+    height: var(--small);
+    border-radius: calc( var(--small) / 2);
+    display: inline-block;
+    animation: breath var(--timing) ease infinite none running
+}
+
+input {
+    margin: 20px 0;
+    height: 40px;
+    font-size: 1.25em;
+}
+
+h1,p,input,label {
+    color: #6E7B8B;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@keyframes breath {
+ 25%, 50% {
+    background-color: var(--secondary-color);
+    width: var(--large);
+    height: var(--large);
+    border-radius: calc( var(--large) / 2);
+ }   
+}
