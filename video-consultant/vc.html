@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Consultation - Arogya</title>
+    <link rel="stylesheet" href="vc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Healthcare at Your Fingertips</h1>
+    </header>
+
+    <main>
+        <div class="top-buttons">
+            <button id="view-appointments" class="action-button">View Appointments</button>
+        </div>
+
+        <h2>Video Consultation</h2>
+        
+        <div class="specialty-selection">
+            <h3>Select Specialty</h3>
+            <select id="specialty-select">
+                <option value="">Choose specialty</option>
+                <option value="ent">ENT</option>
+                <option value="gastroenterology">Gastroenterology</option>
+                <option value="dental">Dental</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="dermatology">Dermatology</option>
+            </select>
+        </div>
+
+        <div id="doctor-listings" class="doctor-listings"></div>
+    </main>
+
+    <div id="appointments-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Appointments</h2>
+            <div id="appointments-list"></div>
+        </div>
+    </div>
+
+    <div id="video-call-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Video Call</h2>
+            
+            <div id="video-container">
+                <video id="local-video" autoplay muted></video>
+                <video id="remote-video" autoplay></video>
+            </div>
+            <button id="end-call" class="action-button">End Call</button>
+        </div>
+    </div>
+
+    <script src="vc.js"></script>
+    <script src="https://cdn.peerjs.com/1.3.1/peer.min.js"></script>
+    
+
+</body>
+</html>
