@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Health Monitor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;800;900&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar Start -->
+    <script src="https://widget.cxgenie.ai/widget.js" data-aid="18128429-d2cc-4db1-83d4-b51a9853dd34" data-lang="en"></script>
+    <header>
+
+        <div class="navBar">
+            <ul>
+                <li id="logo">Health Monitor</li>
+                <li style="font-size: 30px;"><a href="/Nutrition/capstone_report.html">Nutrition Value Chart</a></li>
+            </ul>
+            
+        </div>
+    </header>
+    <!-- Navigation Bar End -->
+
+    <!-- Main Container Start -->
+    <div class="container">
+        <!-- Top Monitor Start -->
+        <div class="top-monitors">
+            <div class="oxy-monitor flexdiv">
+                <h2>BLOOD OXYGEN LEVELS</h1>
+                    <div class="oxy-div">
+                        <span class="counter-o" id="counter-o">78</span>
+                        <span class="spo-label">SPO2</span>
+                    </div>
+                    <span class="label-o" id="label-o">Normal</span>
+            </div>
+            <div class="hrate-monitor flexdiv">
+                <h2>Heart Rate</h2>
+                <div class="hrate-div">
+                    <span class="counter-h" id="counter-h">78</span>
+                    <span class="bpm-label">BPM</span>
+                </div>
+                <span class="label-h" id="label-h">Normal</span>
+            </div>
+
+            <div class="emergency-btn flexdiv">
+                <button id="emergencybtn">Press For EMERGENCY!!!</button>
+            </div>
+        </div>
+
+        <!-- Top Monitor End -->
+
+        <!-- Main DashBoard Start -->
+        <div class="main-content">
+            <!-- Side Monitor Start -->
+            <div class="side-monitors">
+                <div class="blood-monitor">
+                    <h2>BLOOD SUGAR</h2>
+                    <div class="counter-b" id="counter-b">70</div>
+                    <div class="label-b" id="label-b">HIGH SUGAR</div>
+                </div>
+                <div class="sleep-monitor">
+                    <h2>SLEEP MONITOR</h2>
+                    <div class="counter-s" id="counter-s">7</div>
+                    <div class="label-s" id="label-s">HOURS</div>
+                </div>
+            </div>
+            <!-- Side Monitor End -->
+            <div class="main-content-wrapper">
+
+                <!-- Alert Section Start -->
+                <div class="alert-section">
+                    <h2>ALERTS!!</h2>
+                    <div class="alert-fetcher" id="af1"></div>
+                    <div class="alert-fetcher" id="af2"></div>
+                    <div class="alert-fetcher" id="af3"></div>
+
+                </div>
+                <!-- Alert Section End -->
+
+                <!-- Medicine Section Start -->
+                <div class="medicine-section">
+                    <div class="med-top">
+                        <span id="med-top1"></h3>
+                            <span id="med-top2"></h3>
+                    </div>
+                    <h2>Medicines Schedule</h2>
+                    <div class="add-medicine">
+                        <h4>Add Medicine</h4>
+                        <!-- <form> -->
+                        <input type="text" name="med-name" id="med-name" placeholder="Enter Medicine Name">
+                        <select type="text" id="morning">
+                            <option disabled selected>Morning</option>
+                            <option value="Yes">YES</option>
+                            <option value="No">NO</option>
+                        </select>
+                        <select type="text" id="afternoon">
+                            <option disabled selected>Afternoon</option>
+                            <option value="Yes">YES</option>
+                            <option value="No">NO</option>
+                        </select>
+                        <select type="text" id="evening">
+                            <option disabled selected>Evening</option>
+                            <option value="Yes">YES</option>
+                            <option value="No">NO</option>
+                        </select>
+
+                        <button id="addmedicine-btn" onclick="addMedicine()">ADD</button>
+                        <!-- </form> -->
+                    </div>
+                    <div class="scrollable">
+                        <table id="list">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Medicine Name</th>
+                                    <th colspan="3">Timings</th>
+                                </tr>
+                                <tr>
+                                    <th>Morning</th>
+                                    <th>Afternoon</th>
+                                    <th>Evening</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Humulin Inj</td>
+                                    <td>No</td>
+                                    <td>Yes</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>SymlinPen 120</td>
+                                    <td>No</td>
+                                    <td>No</td>
+                                    <td>yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Paracetmol</td>
+                                    <td>Yes</td>
+                                    <td>No</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Medicine Section End -->
+        </div>
+        <!-- Main DashBoard End -->
+    </div>
+    <!-- Main Container End -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

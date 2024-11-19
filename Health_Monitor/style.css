@@ -1,0 +1,471 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+    
+}
+/* Navigation Style Start */
+.navBar{
+    background-color: #4A628A;
+    color: whitesmoke;
+    height:55px;
+    border-radius: 0 0 20px 20px;
+}
+.navBar ul{
+    display: flex;
+    align-items: center;
+    
+}
+.navBar ul li {
+    padding: 10px 12px;
+    margin: 0px 12px;
+    list-style: none;
+    font-size: 15px;
+}
+.navBar li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navBar ul #logo {
+    color: white;
+    font-weight: 600;
+    font-size: 31px;
+}
+.navBar ul li a:hover{
+    color: aqua;
+    
+}
+
+.navBar h1{
+    position: absolute;
+    right: 28px;
+    top:9px;
+    color: aqua;
+}
+/* Navigation Style End */
+
+/* Container Div Start */
+    /* top-monitors div Start */
+    .top-monitors .flexdiv{
+        padding:5px 10px;
+        margin: 20px 50px;
+        width:398.312px;
+        height:100px;
+        border-radius: 15px;
+        
+    } 
+    .top-monitors{
+        display: flex;
+    }
+
+        /* Oxygen Monitor div Start */
+    .top-monitors .oxy-monitor{
+        background-color:#789DBC;
+    }
+    .top-monitors .oxy-monitor h2{
+        color: white;
+    }
+    .top-monitors .oxy-monitor .oxy-div{
+        padding: 10px 30px;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .top-monitors .oxy-monitor .counter-o{
+        border:2px solid grey;
+        padding: 2px 50px;
+        background-color: black;
+        color:white;
+    }
+    .top-monitors .oxy-monitor .oxy-div .spo-label{
+        color:white;
+        font-size:22px ;
+    }
+    .top-monitors .oxy-monitor .label-o{
+        font-size: 20px;
+        border-radius: 10px;
+        
+        padding: 2px 12px;
+        background-color:wheat;
+        text-transform: uppercase;
+    }
+        /* Oxygen Monitor div End */
+
+        /* Heart Rate Monitor div Start */
+    .top-monitors .hrate-monitor{
+        background-color: #789DBC;
+    }
+    .top-monitors .hrate-monitor h2{
+        color: white;
+    }
+    .top-monitors .hrate-monitor .hrate-div{
+        padding: 10px 30px;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .top-monitors .hrate-monitor .counter-h{
+        border:2px solid grey;
+        padding: 2px 50px;
+        background-color: black;
+        color:white;
+    }
+    .top-monitors .hrate-monitor .hrate-div .bpm-label{
+        color: white;
+        font-size:22px ;
+    }
+    .top-monitors .hrate-monitor .label-h{
+        font-size: 25px;
+        border-radius: 10px;
+        
+        padding: 2px 12px;
+        background-color:wheat;
+        text-transform: uppercase;
+    }
+        /* Heart-Rate monitor div end */
+    
+        /* Emergency Button div start */
+    .top-monitors .emergency-btn{
+        background-color: rgb(228, 98, 98);;
+    }
+
+    .top-monitors .emergency-btn button{
+        background-color: rgb(228, 98, 98);
+        width:398.312px; 
+        height:100px;
+        border: none;
+        
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        border-radius: 15px;
+        text-transform: uppercase;
+    }
+        /* Emergency Div End */
+    /* top-monitors div end */
+
+    /* main-content div start */
+    .main-content{
+        display: flex;
+        margin: 10px 10px;
+    }
+        /* Side-monitors div start */
+        .side-monitors{
+            padding: 10px;
+            height:64vh;
+            width: 400px;
+            margin: 0 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+        }
+
+            /* blood-monitor div start */
+            .side-monitors .blood-monitor{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width:350px;
+                height:200px;
+                margin: 13px 0;
+                background-color: #789DBC;
+                
+                border-radius: 13px;
+
+            }
+            .side-monitors .blood-monitor h2{
+                color: whitesmoke;
+            }
+            .side-monitors .blood-monitor .counter-b{
+                padding: 10px 50px;
+                background-color: black;
+                color: white;
+                border:2px solid white;
+                font-size: 25px;
+                font-weight: 400;
+                margin: 1.5rem 0;
+            }
+            .side-monitors .blood-monitor .label-b{
+                font-size: 20px;
+                border-radius: 10px;
+                
+                padding: 2px 12px;
+                background-color:wheat;
+                text-transform: uppercase; 
+            }
+
+
+            /* blood-monitor div end */
+
+            /* Sleep-monitor div start */
+            .side-monitors .sleep-monitor{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width:350px;
+                height:200px;
+                margin: 13px 0;
+                background-color: #789DBC;
+                
+                border-radius: 13px;
+            }
+            .side-monitors .sleep-monitor h2{
+                color: whitesmoke;
+            }
+            .side-monitors .sleep-monitor .counter-s{
+                padding: 10px 50px;
+                background-color: black;
+                color: white;
+                border:2px solid white;
+                font-size: 25px;
+                font-weight: 400;
+                margin: 1.5rem 0;
+            }
+            .side-monitors .sleep-monitor .label-s{
+                font-size: 20px;
+                border-radius: 10px;
+                
+                padding: 2px 12px;
+                background-color:wheat;
+                text-transform: uppercase; 
+            }
+            /* Sleep-monitor div end */
+        /* Side-monitor div end */
+
+        /* main-content-wrapper start */
+        .main-content-wrapper{
+            display: flex; 
+            /* border: 2px solid ; */
+            padding: 10px;
+            height:64vh;
+            width: 950px;
+            margin: 0 35px;
+
+        }
+            /* alert-section div start */
+            .main-content-wrapper .alert-section{
+                width: 300px;
+                /* height: 63vh; */
+                background-color: #7AB2D3;
+                border:2px solid black;
+                /* overflow-y: scroll; */
+                
+
+            }
+            .main-content-wrapper .alert-section h2{
+                background-color: black;
+                height:25px;
+                color: whitesmoke;
+                font-size: 16px;
+                text-transform: uppercase;
+                padding-top:3px ;
+            }
+            .main-content-wrapper .alert-section .alert-fetcher{
+                padding: 5px 10px;
+            }
+            
+            /* alert-section div end */
+
+            /* medicine-section div start */
+            .main-content-wrapper .medicine-section{
+                width: 700px;
+                /* height: 63vh; */
+                background-color: whitesmoke;
+                
+              
+            }
+            .main-content-wrapper .medicine-section .med-top{
+                background-color: black;
+                height:25px;
+                color: whitesmoke;
+                font-size: 16px;
+                text-transform: uppercase;
+                padding-top:3px ;
+            }
+            .main-content-wrapper .medicine-section h2{
+                  padding: 10px 15px;
+                  color: black;
+            }
+            .main-content-wrapper .medicine-section table{
+                width: 100%;
+                
+                border:2px solid black;
+                background-color: whitesmoke;
+            }
+             .main-content-wrapper .medicine-section table th,td{
+                 border:2px solid black;
+                 text-align: center;
+                 text-transform: capitalize;
+              }
+              .main-content-wrapper .medicine-section table td{
+                  text-transform: uppercase;
+              }
+              .main-content-wrapper .medicine-section .scrollable{
+                  width: 100%;
+                  height: 330px;
+                  overflow:auto;
+              }
+              .main-content-wrapper .medicine-section .add-medicine{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 4%  8px;
+                margin-top: -3px;
+                background-color:#4A628A;
+                
+                border-radius: 5px;
+                padding: 5px ;
+              }
+              .main-content-wrapper .medicine-section .add-medicine h4,input,select{
+                  margin: 0 10px;
+              }
+              .main-content-wrapper .medicine-section .add-medicine h4{
+                  color: white; 
+              }
+              .main-content-wrapper .medicine-section .add-medicine button{
+                  background-color: green;
+                  color:white;
+                  padding: 2px;
+                  border-radius: 5px;
+                 
+              }
+              .main-content-wrapper .medicine-section .add-medicine select{
+                  
+                  border-radius: 5px;
+              }
+              .main-content-wrapper .medicine-section .add-medicine input{
+                  border-radius: 3px;
+              }
+              .main-content-wrapper .medicine-section .add-medicine button:hover{
+                  background-color: grey;
+              }
+              
+            /* medicine-section div end */
+        /* main-content-wrapper end */
+    /* main-content div end */
+
+
+    /* Responsive Design */
+        /* For max-width 1400 or min-width 500 */
+        @media(max-width:1400px) {
+            .top-monitors .oxy-monitor .counter-o {
+                padding: 0 18px;
+            }
+            .top-monitors .hrate-monitor .counter-h {
+                padding: 0 18px;
+            }
+            .top-monitors .oxy-monitor h2 {
+                font-size: 21px;
+                margin-bottom: 4px;
+
+            }
+            .top-monitors .oxy-monitor .label-o {
+                font-size: 17px;
+            }
+            .top-monitors .hrate-monitor .label-h {
+                font-size: 17px;
+            }
+            .top-monitors .oxy-monitor .oxy-div {
+                padding: 10px 20px;
+            }
+            .top-monitors .hrate-monitor .hrate-div {
+                padding: 10px 20px;
+            }
+            .main-content-wrapper{
+                height:59vh;
+            }
+            .side-monitors{
+                margin: -20px 35px;
+            }
+            .main-content-wrapper .alert-section {
+                width: 280px;
+            }
+            .main-content-wrapper .medicine-section {
+                width: 530px ;
+            }
+            .main-content-wrapper .medicine-section .add-medicine h4 , select,input{
+                margin: 0 2px;
+              }
+              .main-content-wrapper .medicine-section .add-medicine{
+                  margin:2% 7px;
+              }
+              .main-content-wrapper .medicine-section .add-medicine h4{
+                font-size: 13px;
+              }
+              .main-content-wrapper .medicine-section .scrollable{
+                height: 220px;
+            }
+        }
+
+
+        /* For Mobile Responsive Design max-width 400 */
+        @media(max-width:500px){
+            .navBar ul #logo {
+                color: pink;
+                font-weight: 600;
+                font-size: 17px;
+            }
+            .navBar ul li {
+                padding: 14px 4px;
+                margin: 0px 2px;
+                font-size: 13px;
+            }
+            .navBar h1 {
+                right: 7px;
+                top: 16px;
+                font-size: 15px;
+            }
+            .top-monitors {
+                display: flex;
+                flex-direction: column;
+            }
+            .top-monitors .flexdiv {
+            padding: 5px 10px;
+            margin: 9px 28px;
+            width: 298.312px;
+            }
+            .top-monitors .emergency-btn button {
+                width: 298.312px;
+            }
+            .side-monitors {
+                margin: -20px -10px;
+            }
+            .main-content{
+                flex-direction: column;
+                margin: 10px -15px;
+                
+            }
+            .main-content-wrapper{
+                flex-direction: column;
+                margin:0 18px;
+            }
+            .main-content .medicine-section{
+                margin-top: 16px;
+                width: 36%;
+            }
+            .main-content-wrapper .medicine-section .add-medicine{
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            .main-content-wrapper .medicine-section .add-medicine input {
+             padding: 0px 31px;
+            }
+            .main-content-wrapper{
+                height: 650px;
+            }
+            .main-content-wrapper .medicine-section{
+                height: 513px;
+            }
+            .main-content-wrapper .medicine-section .scrollable{
+                height: 315px;
+            }
+            .main-content-wrapper .alert-section {
+                margin-left: 30px;
+            }
+            
+    }
+    
